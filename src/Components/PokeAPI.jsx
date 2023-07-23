@@ -23,6 +23,10 @@ const PokeAPI = () => {
     }
   );
 
+  useEffect(() => {
+    console.log(pokemonData);
+  }, [pokemonData]);
+
   if (isLoading) {
     return <h1>Loading...</h1>;
   }
